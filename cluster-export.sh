@@ -1,0 +1,16 @@
+export OCI_COMPARTMENT_ID="ocid1.compartment.oc1..aaaaaaaaqi3if6t4n24qyabx5pjzlw6xovcbgugcmatavjvapyq3jfb4diqq"
+export OCI_IMAGE_ID="ocid1.image.oc1.eu-frankfurt-1.aaaaaaaanfh7sjjamqethsdxawtob7l7ej3nlbtyzyqvmqjw75wmzjsytrza"
+export OCI_CONTROL_PLANE_MACHINE_TYPE="VM.Standard.E4.Flex"
+export OCI_CONTROL_PLANE_MACHINE_TYPE_OCPUS=1
+export OCI_NODE_MACHINE_TYPE="VM.Standard.E4.Flex"
+export OCI_NODE_MACHINE_TYPE_OCPUS=1
+export OCI_SSH_KEY="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDU+UhFcOrrOEYim254Uy9i6ZT3M4goH+poSYlWmylnvvAcryJg54kMRWv3rV/Xx6nxbyjukDXGQTYj0Q5caSlGwdg2e4yVLxLRUQbIacW5K468f8EkfNoYNDGrmARvhybWSQvLk5EHR7DlBXQXCmS5yiO7gl+5PFncnNlNRhhwujuHE5nEkdAXSLrAL+NE2hZxlAgpEV0X9Zu9lyl9UT2kgekQ0mr5eDsJMKNoqBoWnhaXEQuCJ4Bw7rJy55GNmwLS/KtpQRKSuAlTRG7pLEL4nc1BOvPQTfx/+gMcT6+NL1yxUusXXuqfk377loeyjiKK+lDrG6pU2gu6+YX68/dn ssh-key-2021-07-20"
+export OCI_CONTROL_PLANE_PV_TRANSIT_ENCRYPTION="false"
+export OCI_NODE_PV_TRANSIT_ENCRYPTION="false"
+export CONTROL_PLANE_MACHINE_COUNT=1
+export NODE_MACHINE_COUNT=1
+export POD_CIDR="10.244.0.0/16"
+export SERVICE_CIDR="10.96.0.0/16"
+export KUBERNETES_VERSION="v1.31.4"
+export USE_INSTANCE_PRINCIPAL="true"
+export USE_INSTANCE_PRINCIPAL_B64="$(echo -n "$USE_INSTANCE_PRINCIPAL" | base64 | tr -d '\n')"
